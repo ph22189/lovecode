@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/backgr.css">
+    <link rel="stylesheet" href="style/button.css">
+    <title>Dương Đình Võ</title>
+</head>
+<body>
+    <h1>Bấm vô đi đó là lời em muốn nói á</h1></br>
+<div class="background-image"></div>
+<div class="but">
+<a href="next3.html"> <button class="snip1582">click vô đây nè</button> </a>
+<!-- <a href="no.html"> <button class="snip1582">chưa có</button> </a> -->
+</div>
+</body>
+<script>const bg = document.querySelector('.background-image');
+    const windowWidth = window.innerWidth / 5;
+    const windowHeight = window.innerHeight / 5;
+    
+    bg.addEventListener('mousemove', e => {
+      const mouseX = e.clientX / windowWidth;
+      const mouseY = e.clientY / windowHeight;
+    
+      bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+    });</script>
+</html>
